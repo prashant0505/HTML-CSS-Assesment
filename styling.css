@@ -14,11 +14,12 @@ body {
 .containerFull{
     min-height: 100vh;
     width: 100%;
-    background: rgba(0, 0, 0, 0.7)url("./images/background.jpg");
+    background: rgba(0, 0, 0, 0.7)url('./Images/background.jpg');
     background-size: 1160px;
     background-position: cover;
     background-blend-mode: darken;
 }
+
 
 .container{
     width: 1140px;
@@ -169,6 +170,11 @@ border-bottom: 3px solid rgb(33, 221, 174);
         line-height: 2rem;
 
     }
+}
+
+/* Gym Section Begins */
+.Gym{
+    text-align: center;
 }
 
 
