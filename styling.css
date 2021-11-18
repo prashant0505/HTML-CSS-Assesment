@@ -32,7 +32,7 @@ header {
 }
 
 header .toggleNav{
-    background-image: url("./images/menu.png");
+    background-image: url("./Images/menu.png");
     height: 50px;
     width: 50px;
     background-color: transparent;
