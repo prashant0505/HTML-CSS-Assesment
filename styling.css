@@ -14,7 +14,7 @@ body {
 .containerFull{
     min-height: 100vh;
     width: 100%;
-    background: rgba(0, 0, 0, 0.7)url('./Images/background.jpg');
+    background: rgba(0, 0, 0, 0.7)url("./Images/background.jpg");
     background-size: 1160px;
     background-position: cover;
     background-blend-mode: darken;
@@ -32,7 +32,7 @@ header {
 }
 
 header .toggleNav{
-    background-image: url("./Images/menu.png");
+    background-image: url('./Images/menu.png');
     height: 50px;
     width: 50px;
     background-color: transparent;
