@@ -13,10 +13,10 @@ body {
 .containerFull{
     min-height: 100vh;
     width: 100%;
-    background-image: url("./images/Website_background.jpg");
-    background-size: cover;
-    background-position: center;
-    filter: blur(0.3);
+    background: rgba(0, 0, 0, 0.7)url("./images/background.jpg");
+    background-size: 1160px;
+    background-position: cover;
+    background-blend-mode: darken;
 }
 
 .container{
@@ -42,12 +42,13 @@ header .toggleNav{
 
 header .logo{
     height: 50px;
-    color: #000;
+    color: #fff;
     font-size: 2rem;
+    padding-top: 2%;
 }
 
 span{
-    color: rgb(39, 221, 33);
+    color: rgb(33, 221, 174);
 }
 
 header nav ul{
@@ -56,26 +57,73 @@ header nav ul{
 
 header nav ul li{
     display: inline-block;
+    padding-top: 5%;
 }
 
 header nav ul li a{
-    color: #000;
+    color: #fff;
     height: 50px;
     line-height: 50px;
     padding: 0 15px;
-    font-size: 14px;
+    font-size: 15px;
     display: inline-block;
     text-decoration: none;
 }
 
 header nav ul li a:hover{
-border-bottom: 3px solid rgb(89, 247, 57);
+border-bottom: 3px solid rgb(33, 221, 174);
 }    
 
+.banner{
+    color: #fff;
+    width: 500px;
+    direction: ltr;
+    float: left;
+}
 
+.banner h1{
+    margin-top: 170px;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    text-shadow: 0 0 5px #000;
+}
 
+.banner p{
+    width: 70%;
+    margin-top: 30px;
+    font-size: 14px;
+    text-shadow: 0 0 5px #000;
+}
 
+.banner button{
+    border: 0;
+    outline: none;
+    background-color: aqua;
+    padding: 15px 50px;
+    margin-top: 30px;
+    color: #000;
+    font-weight: 800;
+}
 
+@media screen and (max-width: 1140px) {
+    .container{
+        width: 100%;
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-width: 768px) { 
+
+    
+    header nav{
+        position: absolute;
+        top: 50px;
+        width: 300px;
+        right: 15px;
+        background-color: #000000f5;
+    }
+    
+}
 
 
 
