@@ -1,68 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styling.css">
+    <link rel="stylesheet" href="./style.css">
     <title>FitStop Gym And Fitness Club</title>
-</head>
-<body>
-    <div class="containerFull">
-        <div class="container">
-            <header>
-                <div class="logo">
-                    Fit<span>Stop</span>
-                </div>
-                <button class="toggleNav"></button>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="javascript:void(0);">Sports</a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0);">Gym</a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0);">Fitness</a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0);">Location</a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0);">Contact us</a>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
 
-            <div class="banner">
-                <h1>
-                Explore The World of Fit<span>Stop</span>
-                </h1>
-                <p>
-                    We've transformed every aspect of our memebership to
-                    encompass integrated digital and in-club offerings to
-                    keep you at your best
-                </p>
-                <a href="">Enroll Now</a>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+    <!-- Header Section Start -->
+    <header>
+        <a href="#" class="logo"><span>Fit</span>Stop</a>
+
+        <div id="menu" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <ul>
+                <li><a class="active" href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#service">service</a></li>
+                <li><a href="#trainers">trainers</a></li>
+                <li><a href="#plan">plan</a></li>
+                <li><a href="#register">register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Header Section ends -->
+
+    <!--------------------------------------------------------------------------------------------------------------------->
+
+    <!-- Home Section Start -->
+    <section class="home" id="home">
+        <h1>Explore the world of <br><span>Fit</span>Stop</h1>
+        <a href="#"><button class="btn">Enroll now</button></a>
+    </section>
+    <!-- Home Section ends -->
+
+    <!--------------------------------------------------------------------------------------------------------------------->
+
+    <!-- About Section Start -->
+    <section class="about" id="about">
+
+        <div class="row">
+            <div class="image">
+                <img src="./Images/about1.jpg" alt="">
             </div>
 
+            <div class="content">
+                <h3>A Word About us</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, quidem nulla eum debitis hic veritatis incidunt perferendis aperiam exercitationem voluptatibus beatae illum odit libero. Repudiandae ipsam sed voluptate molestiae in?
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis architecto ab eum earum fuga, velit quis omnis id culpa saepe.</p>
+                <a href="#"><button class="btn">Learn more</button></a>
+            </div>
         </div>
-    </div>
-    <script type="text/javascript">
-        document.querySelector(".toggleNav").addEventListener("click",(event)=>{
-            document.querySelector("nav").classList.toggle("active");
-        });
-    </script>
 
-    <!-- Gym Section Start -->
-    <section class="Gym" id="Gym">
-        <div class="max-width">
-            <h2 class="title">Gym</h2>
-            <div class="Gym Online">
-                
+
+    </section>
+    <!-- About Section ends  -->
+
+    <!--------------------------------------------------------------------------------------------------------------------->
+
+    <!-- Services Section Start -->
+    <section class="service" id="service">
+        <h1 class="heading">Our Services</h1>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="./Images/treadmil.jpg" alt="">
+                <div class="info">
+                    <h3>Treadmill</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, modi! Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                    <a href="#"><button class="btn">view more</button></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./Images/yoga.jpg" alt="">
+                <div class="info">
+                    <h3>Yoga</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, modi! Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                    <a href="#"><button class="btn">view more</button></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./Images/trainer.jpg" alt="">
+                <div class="info">
+                    <h3>Trainers</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, modi! Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                    <a href="#"><button class="btn">view more</button></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./Images/equip.jpg" alt="">
+                <div class="info">
+                    <h3>Equipments</h3>
+                    <a href="#"><button class="btn">view more</button></a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, modi! Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./Images/boxing.jpg" alt="">
+                <div class="info">
+                    <h3>Boxing</h3>
+                    <a href="#"><button class="btn">view more</button></a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, modi! Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./Images/weight-lifting.jpg" alt="">
+                <div class="info">
+                    <h3>Weightlifting</h3>
+                    <a href="#"><button class="btn">view more</button></a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, modi! Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                </div>
             </div>
         </div>
     </section>
+    <!-- Services Section ends  -->
+
+    <!--------------------------------------------------------------------------------------------------------------------->
+
+    <!-- Trainers Section starts  -->
+    <section class="teams" id="teams">
+        <div class="max-width">
+            <h2 class="title">My Team</h2>
+            <div class="carousel owl-carousel">
+                <div class="card">
+                    <div class="box">
+                        <img src="images/Profile 1.jpg" alt="">
+                        <div class="text">Prashant Patidar</div>
+                        <p>The Founder and specialised in the backend coding of JAVA.</p>
+                    </div>
+                </div>
+    </section>
+    <!-- Trainers Section ends  -->
+
+    <!--------------------------------------------------------------------------------------------------------------------->
+
+    <!-- Fitness Plan Section starts -->
+
+    <!-- Fitness Plan Section ends  -->
+
+    <!--------------------------------------------------------------------------------------------------------------------->
+
+    <!-- Register Section start -->
+
+    <!-- Register Section ends  -->
+
+    <!--------------------------------------------------------------------------------------------------------------------->
+
+    <!-- footer start -->
+
+    <!-- footer ends -->
+
+    <!--jquery link-->
+    <script src="script.js" type="text/javascript"></script>
 </body>
+
 </html>
