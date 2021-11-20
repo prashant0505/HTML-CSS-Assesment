@@ -6,7 +6,7 @@
 
 * {
     font-family: 'Poppins', sans-serif;
-    transition: all .2s linear;
+    transition: all 0.3s ease;
     text-transform: capitalize;
     outline: none;
     text-decoration: none;
@@ -252,6 +252,7 @@ header.header-active .navbar a {
     margin: 1rem;
     overflow: hidden;
     position: relative;
+    transition: all 0.3s ease;
     cursor: pointer;
 }
 
@@ -259,6 +260,7 @@ header.header-active .navbar a {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    transition: all 0.3s ease;
 }
 
 .service .box-container .box .info {
@@ -277,6 +279,7 @@ header.header-active .navbar a {
 
 .service .box-container .box:hover .info {
     transform: translate(-50%, -50%) scale(1);
+    transition: all 0.3s ease;
 }
 
 .service .box-container .box .info h3 {
@@ -304,7 +307,7 @@ header.header-active .navbar a {
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
-    transition: all0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .trainers .carousel .card:hover {
@@ -316,7 +319,7 @@ header.header-active .navbar a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: all0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .trainers .carousel .card:hover .box {
@@ -443,19 +446,17 @@ header.header-active .navbar a {
 }
 
 
-/* Contact section styling */
-
-.max-width {
-    max-width: 1300px;
-    padding: 0 80px;
-    margin: auto;
-}
+/* register section styling */
 
 .register {
-    min-height: 100vh;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.562);
     font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background: #eee;
+    text-align: center;
+}
+
+.register h1 {
+    text-align: center;
 }
 
 .register .contact-content {
@@ -465,25 +466,20 @@ header.header-active .navbar a {
     justify-content: space-between;
 }
 
-.register .title::after {
-    content: "get in touch";
-}
-
 .register .contact-content .column {
     width: calc(50% - 30px);
 }
 
 .register .contact-content .text {
-    font-size: 30px;
-    background: transparent;
-    text-align: left;
+    font-size: 20px;
     font-weight: 600;
+    text-align: left;
     margin-bottom: 10px;
 }
 
 .register .contact-content .left p {
     text-align: justify;
-    font-size: 2rem;
+    font-size: 16px;
 }
 
 .register .contact-content .left .icons {
@@ -495,8 +491,7 @@ header.header-active .navbar a {
     display: flex;
     height: 65px;
     align-items: center;
-    font-size: 1.5rem;
-    text-align: left;
+    font-size: 20px;
 }
 
 .register .contact-content .row .info {
@@ -504,18 +499,18 @@ header.header-active .navbar a {
 }
 
 .register .contact-content .row i {
-    font-size: 3rem;
-    color: aqua;
+    font-size: 25px;
+    color: crimson;
 }
 
 .register .contact-content .info .head {
     font-weight: 500;
-    font-size: 18px;
+    text-align: left;
 }
 
 .register .contact-content .info .sub-title {
-    font-size: 18px;
-    color: #fff;
+    color: #333;
+    text-align: left;
 }
 
 .register .right form .fields {
@@ -546,8 +541,6 @@ header.header-active .navbar a {
 .register .right form .textarea textarea {
     height: 100%;
     width: 100%;
-    background-color: transparent;
-    color: #40e0d3;
     border: 1px solid lightgrey;
     border-radius: 6px;
     outline: none;
@@ -561,8 +554,55 @@ header.header-active .navbar a {
     resize: none;
 }
 
-.register .right form .reg {
-    text-align: left;
+.register .right form .button {
+    height: 47px;
+    width: 170px;
+}
+
+.register .right form .button button {
+    width: 100%;
+    height: 100%;
+    border: 2px solid crimson;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.register .right form .button button:hover {
+    color: crimson;
+    background: none;
+}
+
+
+/* footer section styling */
+
+footer {
+    font-family: 'Poppins', sans-serif;
+}
+
+footer {
+    background: #111;
+    font-size: 2rem;
+    padding: 20px 23px;
+    color: #fff;
+    text-align: center;
+}
+
+footer span a {
+    color: aqua;
+    text-decoration: none;
+}
+
+footer span a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -602,6 +642,10 @@ header.header-active .navbar a {
         top: 8rem;
         opacity: 1;
     }
+    .register .contact-content .info .sub-title,
+    .register .contact-content .info .head {
+        font-size: 70%;
+    }
 }
 
 @media (max-width:500px) {
@@ -616,6 +660,22 @@ header.header-active .navbar a {
 
 @media (max-width: 947px) {
     .contact .contact-content .column {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+}
+
+@media (max-width: 991px) {
+    .max-width {
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 947px) {
+    .max-width {
+        max-width: 800px;
+    }
+    .register .contact-content .column {
         width: 100%;
         margin-bottom: 35px;
     }
