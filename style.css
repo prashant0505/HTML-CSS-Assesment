@@ -519,6 +519,10 @@ header.header-active .navbar a {
     padding-top: 1em;
 }
 
+.register .contact-content .text u {
+    border-bottom: .2rem solid aqua;
+}
+
 .register .contact-content .column {
     width: calc(50% - 30px);
 }
