@@ -391,6 +391,15 @@ header.header-active .navbar a {
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
+    color: whitesmoke;
+}
+
+.trainers .carousel .card .box:hover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
 }
 
 .trainers .carousel .card:hover .box {
@@ -401,6 +410,10 @@ header.header-active .navbar a {
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
+}
+
+.trainers .carousel .box p {
+    font-size: 15px;
 }
 
 .trainers .carousel .card img {
@@ -427,7 +440,7 @@ header.header-active .navbar a {
     margin: 0 5px;
     outline: none!important;
     border-radius: 50%;
-    border: 2px solid #000!important;
+    border: 2px solid aqua!important;
     transition: all 0.3s ease;
 }
 
@@ -438,7 +451,7 @@ header.header-active .navbar a {
 
 .owl-dot.active,
 .owl-dot:hover {
-    background: #000!important;
+    background: aqua!important;
 }
 
 
@@ -465,13 +478,13 @@ header.header-active .navbar a {
 .plan .box-container .box .title {
     font-size: 2.5rem;
     background: aqua;
-    color: #fff;
+    color: black;
     padding: 1rem 0;
 }
 
 .plan .box-container .box .price {
     font-size: 4rem;
-    color: #333;
+    color: rgba(107, 96, 96, 0.664);
     padding-top: 1rem;
 }
 
@@ -481,7 +494,7 @@ header.header-active .navbar a {
 
 .plan .box-container .box .month {
     font-size: 2rem;
-    color: #666;
+    color: rgba(107, 96, 96, 0.664);
 }
 
 .plan .box-container .box ul {
@@ -492,7 +505,7 @@ header.header-active .navbar a {
 .plan .box-container .box ul li {
     text-align: left;
     font-size: 1.5rem;
-    color: #666;
+    color: rgba(107, 96, 96, 0.664);
 }
 
 .plan .box-container .box ul li i {
@@ -634,7 +647,7 @@ footer {
 
 footer {
     background: #111;
-    font-size: 2rem;
+    font-size: 15px;
     padding: 20px 23px;
     color: #fff;
     text-align: center;
